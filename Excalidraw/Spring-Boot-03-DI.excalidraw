@@ -1,0 +1,355 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t0",
+      "x": 230,
+      "y": 20,
+      "text": "Dependency Injection: Types & Wiring",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "Dependency Injection: Types & Wiring",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "b1",
+      "x": 40,
+      "y": 90,
+      "width": 240,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tb1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tb1",
+      "x": 50,
+      "y": 105,
+      "width": 220,
+      "height": 50,
+      "text": "Controller Bean\n(@Controller)",
+      "fontSize": 16,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "b1",
+      "originalText": "Controller Bean\n(@Controller)",
+      "autoResize": true
+    },
+    {
+      "type": "diamond",
+      "id": "iface",
+      "x": 330,
+      "y": 85,
+      "width": 170,
+      "height": 90,
+      "backgroundColor": "#5c3d1a",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "boundElements": [
+        {
+          "id": "tiface",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tiface",
+      "x": 355,
+      "y": 115,
+      "width": 120,
+      "height": 30,
+      "text": "INotification",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "iface",
+      "originalText": "INotification",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "impl1",
+      "x": 560,
+      "y": 60,
+      "width": 250,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "timpl1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "timpl1",
+      "x": 570,
+      "y": 75,
+      "width": 230,
+      "height": 30,
+      "text": "EmailService (@Component)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "impl1",
+      "originalText": "EmailService (@Component)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "impl2",
+      "x": 560,
+      "y": 140,
+      "width": 250,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "timpl2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "timpl2",
+      "x": 570,
+      "y": 155,
+      "width": 230,
+      "height": 30,
+      "text": "SmsService (@Component)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "impl2",
+      "originalText": "SmsService (@Component)",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "abi",
+      "x": 280,
+      "y": 130,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "b1",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "iface",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "ai1",
+      "x": 500,
+      "y": 120,
+      "width": 60,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          -30
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "iface",
+        "fixedPoint": [
+          1,
+          0.4
+        ]
+      },
+      "endBinding": {
+        "elementId": "impl1",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "ai2",
+      "x": 500,
+      "y": 140,
+      "width": 60,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          30
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "iface",
+        "fixedPoint": [
+          1,
+          0.6
+        ]
+      },
+      "endBinding": {
+        "elementId": "impl2",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "amb",
+      "x": 520,
+      "y": 115,
+      "text": "@Qualifier / @Primary",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#a0a0a0",
+      "originalText": "@Qualifier / @Primary",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "types",
+      "x": 40,
+      "y": 230,
+      "width": 370,
+      "height": 170,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#2d1b69",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "boundElements": [
+        {
+          "id": "ttypes",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "ttypes",
+      "x": 50,
+      "y": 245,
+      "width": 350,
+      "height": 140,
+      "text": "Injection Types\n\n1. Constructor (recommended)\n   - required deps, immutable, testable\n2. Setter (@Autowired)\n   - optional / reconfigurable\n3. Field (@Autowired)\n   - concise but harder to test",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "types",
+      "originalText": "Injection Types\n\n1. Constructor (recommended)\n   - required deps, immutable, testable\n2. Setter (@Autowired)\n   - optional / reconfigurable\n3. Field (@Autowired)\n   - concise but harder to test",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "cfg",
+      "x": 450,
+      "y": 230,
+      "width": 360,
+      "height": 170,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d4d",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "boundElements": [
+        {
+          "id": "tcfg",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tcfg",
+      "x": 460,
+      "y": 245,
+      "width": 340,
+      "height": 140,
+      "text": "Bean & Value Configuration\n\n• @Bean in @Configuration\n  (explicit/3rd-party beans)\n• application.properties\n• @Value(\"${prop}\")\n  externalized simple values",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "cfg",
+      "originalText": "Bean & Value Configuration\n\n• @Bean in @Configuration\n  (explicit/3rd-party beans)\n• application.properties\n• @Value(\"${prop}\")\n  externalized simple values",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

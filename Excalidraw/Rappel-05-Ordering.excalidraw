@@ -1,0 +1,133 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 250,
+      "y": 20,
+      "text": "Ordering & Searching: Comparable vs Comparator",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "Ordering & Searching: Comparable vs Comparator",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "cmpable",
+      "x": 60,
+      "y": 80,
+      "width": 360,
+      "height": 170,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tcmpable",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tcmpable",
+      "x": 70,
+      "y": 95,
+      "width": 340,
+      "height": 140,
+      "text": "Comparable<T> (natural order)\n• Implemented by the element class\n• Method: compareTo(T o)\n• One natural ordering\n• Used by: Collections.sort(list), TreeSet\n\n<0 before, 0 equal, >0 after",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "cmpable",
+      "originalText": "Comparable<T> (natural order)\n• Implemented by the element class\n• Method: compareTo(T o)\n• One natural ordering\n• Used by: Collections.sort(list), TreeSet\n\n<0 before, 0 equal, >0 after",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "cmptor",
+      "x": 460,
+      "y": 80,
+      "width": 380,
+      "height": 170,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "tcmptor",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tcmptor",
+      "x": 470,
+      "y": 95,
+      "width": 360,
+      "height": 140,
+      "text": "Comparator<T> (external order)\n• Separate class/lambda\n• Method: compare(T a, T b)\n• Many possible orderings\n• Used by: sort(list, cmp), TreeSet(cmp)\n\nChaining: comparing(...).thenComparing(...)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "cmptor",
+      "originalText": "Comparator<T> (external order)\n• Separate class/lambda\n• Method: compare(T a, T b)\n• Many possible orderings\n• Used by: sort(list, cmp), TreeSet(cmp)\n\nChaining: comparing(...).thenComparing(...)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "warn",
+      "x": 120,
+      "y": 290,
+      "width": 660,
+      "height": 100,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c1a1a",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "boundElements": [
+        {
+          "id": "twarn",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "twarn",
+      "x": 130,
+      "y": 305,
+      "width": 640,
+      "height": 70,
+      "text": "Equality semantics: List uses equals() for contains/indexOf.\nTreeSet/TreeMap use compareTo/compare == 0 as duplicates → inconsistent comparator can drop elements!\nSearching: indexOf/lastIndexOf are List methods (cast if needed).",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "warn",
+      "originalText": "Equality semantics: List uses equals() for contains/indexOf.\nTreeSet/TreeMap use compareTo/compare == 0 as duplicates → inconsistent comparator can drop elements!\nSearching: indexOf/lastIndexOf are List methods (cast if needed).",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

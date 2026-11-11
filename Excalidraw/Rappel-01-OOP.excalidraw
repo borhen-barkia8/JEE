@@ -1,0 +1,275 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 220,
+      "y": 20,
+      "text": "OOP: Overloading, Overriding, Polymorphism",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "OOP: Overloading, Overriding, Polymorphism",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "ol",
+      "x": 40,
+      "y": 80,
+      "width": 240,
+      "height": 120,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tol",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tol",
+      "x": 50,
+      "y": 95,
+      "width": 220,
+      "height": 90,
+      "text": "Overloading\nCompile-time\nSame name, different params\nReturn type not enough",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "ol",
+      "originalText": "Overloading\nCompile-time\nSame name, different params\nReturn type not enough",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "or",
+      "x": 320,
+      "y": 80,
+      "width": 240,
+      "height": 120,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "tor",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tor",
+      "x": 330,
+      "y": 95,
+      "width": 220,
+      "height": 90,
+      "text": "Overriding\nRuntime\nSame signature, new body\nEnables dynamic dispatch",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "or",
+      "originalText": "Overriding\nRuntime\nSame signature, new body\nEnables dynamic dispatch",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "poly",
+      "x": 600,
+      "y": 80,
+      "width": 240,
+      "height": 120,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#2d1b69",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "boundElements": [
+        {
+          "id": "tpoly",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tpoly",
+      "x": 610,
+      "y": 95,
+      "width": 220,
+      "height": 90,
+      "text": "Polymorphism\nx.m() depends on\ndynamic object type\nCode to general types",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "poly",
+      "originalText": "Polymorphism\nx.m() depends on\ndynamic object type\nCode to general types",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 280,
+      "y": 140,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "ol",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "or",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 560,
+      "y": 140,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "or",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "poly",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "abs",
+      "x": 120,
+      "y": 250,
+      "width": 300,
+      "height": 130,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c3d1a",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "boundElements": [
+        {
+          "id": "tabs",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tabs",
+      "x": 130,
+      "y": 265,
+      "width": 280,
+      "height": 100,
+      "text": "Abstract class\n• abstract methods (no body)\n• cannot be instantiated\n• subclass must implement all\n• can mix concrete + abstract",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "abs",
+      "originalText": "Abstract class\n• abstract methods (no body)\n• cannot be instantiated\n• subclass must implement all\n• can mix concrete + abstract",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "intf",
+      "x": 460,
+      "y": 250,
+      "width": 300,
+      "height": 130,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d4d",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "boundElements": [
+        {
+          "id": "tintf",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tintf",
+      "x": 470,
+      "y": 265,
+      "width": 280,
+      "height": 100,
+      "text": "Interface\n• contract (what, not how)\n• methods public abstract (default ok)\n• fields public static final\n• class can implement many",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "intf",
+      "originalText": "Interface\n• contract (what, not how)\n• methods public abstract (default ok)\n• fields public static final\n• class can implement many",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

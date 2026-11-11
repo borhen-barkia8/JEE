@@ -1,0 +1,133 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 220,
+      "y": 20,
+      "text": "Exception Handling & java.time API",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "Exception Handling & java.time API",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "ex",
+      "x": 40,
+      "y": 80,
+      "width": 380,
+      "height": 240,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c1a1a",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "boundElements": [
+        {
+          "id": "tex",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tex",
+      "x": 50,
+      "y": 95,
+      "width": 360,
+      "height": 210,
+      "text": "Exceptions (Throwable)\n\n• throw: raise an exception\n• throws: declare propagation (checked)\n• try/catch: handle it\n• finally: always runs (cleanup)\n• printStackTrace(): diagnostics\n\nChecked: extends Exception\nUnchecked: extends RuntimeException\n(need not be declared)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "ex",
+      "originalText": "Exceptions (Throwable)\n\n• throw: raise an exception\n• throws: declare propagation (checked)\n• try/catch: handle it\n• finally: always runs (cleanup)\n• printStackTrace(): diagnostics\n\nChecked: extends Exception\nUnchecked: extends RuntimeException\n(need not be declared)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "flow",
+      "x": 460,
+      "y": 80,
+      "width": 360,
+      "height": 110,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c3d1a",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "boundElements": [
+        {
+          "id": "tflow",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tflow",
+      "x": 470,
+      "y": 95,
+      "width": 340,
+      "height": 80,
+      "text": "Flow: try → (exception?) → catch\n                 ↓ always\n               finally\nPropagate with throws / throw new ...",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "flow",
+      "originalText": "Flow: try → (exception?) → catch\n                 ↓ always\n               finally\nPropagate with throws / throw new ...",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "time",
+      "x": 460,
+      "y": 210,
+      "width": 360,
+      "height": 110,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "ttime",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "ttime",
+      "x": 470,
+      "y": 225,
+      "width": 340,
+      "height": 80,
+      "text": "java.time (immutable, static factories)\n• LocalDate / LocalTime / LocalDateTime\n• Period (date units), Duration (time units)\n• parse/format with DateTimeFormatter",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "containerId": "time",
+      "originalText": "java.time (immutable, static factories)\n• LocalDate / LocalTime / LocalDateTime\n• Period (date units), Duration (time units)\n• parse/format with DateTimeFormatter",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

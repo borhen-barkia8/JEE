@@ -1,0 +1,356 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 210,
+      "y": 20,
+      "text": "Classic JPA: EntityManager CRUD (No Mapping)",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "Classic JPA: EntityManager CRUD (No Mapping)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "app",
+      "x": 40,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tapp",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tapp",
+      "x": 50,
+      "y": 115,
+      "width": 160,
+      "height": 50,
+      "text": "Application / Service\nbusiness logic",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "app",
+      "originalText": "Application / Service\nbusiness logic",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "em",
+      "x": 270,
+      "y": 80,
+      "width": 220,
+      "height": 120,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#2d1b69",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "boundElements": [
+        {
+          "id": "tem",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tem",
+      "x": 280,
+      "y": 95,
+      "width": 200,
+      "height": 90,
+      "text": "EntityManager\n@PersistenceContext\n\npersist()  find()\nmerge()    remove()",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "em",
+      "originalText": "EntityManager\n@PersistenceContext\n\npersist()  find()\nmerge()    remove()",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "pc",
+      "x": 270,
+      "y": 240,
+      "width": 220,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c3d1a",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "boundElements": [
+        {
+          "id": "tpc",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tpc",
+      "x": 280,
+      "y": 255,
+      "width": 200,
+      "height": 40,
+      "text": "Persistence Context\n(managed entities)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "pc",
+      "originalText": "Persistence Context\n(managed entities)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "prov",
+      "x": 540,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "tprov",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tprov",
+      "x": 550,
+      "y": 115,
+      "width": 160,
+      "height": 50,
+      "text": "JPA Provider\n(e.g. Hibernate)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "prov",
+      "originalText": "JPA Provider\n(e.g. Hibernate)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "db",
+      "x": 770,
+      "y": 110,
+      "width": 140,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d4d",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "boundElements": [
+        {
+          "id": "tdb",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tdb",
+      "x": 780,
+      "y": 125,
+      "width": 120,
+      "height": 30,
+      "text": "Database",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "db",
+      "originalText": "Database",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 220,
+      "y": 140,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "app",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "em",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 490,
+      "y": 140,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "em",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "prov",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a3",
+      "x": 720,
+      "y": 140,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "prov",
+        "fixedPoint": [
+          1,
+          0.5
+        ]
+      },
+      "endBinding": {
+        "elementId": "db",
+        "fixedPoint": [
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a4",
+      "x": 380,
+      "y": 200,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeStyle": "dashed",
+      "strokeColor": "#8b5cf6",
+      "startBinding": {
+        "elementId": "em",
+        "fixedPoint": [
+          0.5,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "pc",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "x": 520,
+      "y": 240,
+      "text": "flush/commit syncs managed changes",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#a0a0a0",
+      "originalText": "flush/commit syncs managed changes",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

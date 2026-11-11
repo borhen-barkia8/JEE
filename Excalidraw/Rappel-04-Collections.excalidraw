@@ -1,0 +1,534 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 220,
+      "y": 20,
+      "text": "Collections Framework & Map (Key Ideas)",
+      "fontSize": 22,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "originalText": "Collections Framework & Map (Key Ideas)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "coll",
+      "x": 250,
+      "y": 70,
+      "width": 200,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#5c3d1a",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "boundElements": [
+        {
+          "id": "tcoll",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tcoll",
+      "x": 260,
+      "y": 85,
+      "width": 180,
+      "height": 30,
+      "text": "Collection<E>",
+      "fontSize": 18,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "coll",
+      "originalText": "Collection<E>",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "set",
+      "x": 70,
+      "y": 170,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tset",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tset",
+      "x": 80,
+      "y": 185,
+      "width": 150,
+      "height": 30,
+      "text": "Set (no duplicates)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "set",
+      "originalText": "Set (no duplicates)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "sset",
+      "x": 70,
+      "y": 260,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1e3a5f",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "boundElements": [
+        {
+          "id": "tsset",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tsset",
+      "x": 80,
+      "y": 275,
+      "width": 150,
+      "height": 30,
+      "text": "SortedSet / TreeSet",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "sset",
+      "originalText": "SortedSet / TreeSet",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "list",
+      "x": 300,
+      "y": 170,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "tlist",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tlist",
+      "x": 310,
+      "y": 185,
+      "width": 150,
+      "height": 30,
+      "text": "List (ordered, dupes)",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "list",
+      "originalText": "List (ordered, dupes)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "alist",
+      "x": 300,
+      "y": 260,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d2e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "boundElements": [
+        {
+          "id": "talist",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "talist",
+      "x": 310,
+      "y": 275,
+      "width": 150,
+      "height": 30,
+      "text": "ArrayList",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "alist",
+      "originalText": "ArrayList",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "ac1",
+      "x": 300,
+      "y": 130,
+      "width": 120,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -120,
+          40
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "coll",
+        "fixedPoint": [
+          0.25,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "set",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "ac2",
+      "x": 350,
+      "y": 130,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "coll",
+        "fixedPoint": [
+          0.5,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "list",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "as1",
+      "x": 155,
+      "y": 230,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "set",
+        "fixedPoint": [
+          0.5,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "sset",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "al1",
+      "x": 385,
+      "y": 230,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "list",
+        "fixedPoint": [
+          0.5,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "alist",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "map",
+      "x": 560,
+      "y": 70,
+      "width": 260,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#2d1b69",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "boundElements": [
+        {
+          "id": "tmap",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tmap",
+      "x": 570,
+      "y": 85,
+      "width": 240,
+      "height": 30,
+      "text": "Map<K,V> (not a Collection)",
+      "fontSize": 16,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "map",
+      "originalText": "Map<K,V> (not a Collection)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "hmap",
+      "x": 540,
+      "y": 170,
+      "width": 140,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d4d",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "boundElements": [
+        {
+          "id": "thmap",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "thmap",
+      "x": 550,
+      "y": 185,
+      "width": 120,
+      "height": 30,
+      "text": "HashMap",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "hmap",
+      "originalText": "HashMap",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "tmapc",
+      "x": 700,
+      "y": 170,
+      "width": 140,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#1a4d4d",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "boundElements": [
+        {
+          "id": "ttmapc",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "ttmapc",
+      "x": 710,
+      "y": 185,
+      "width": 120,
+      "height": 30,
+      "text": "TreeMap",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#e5e5e5",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "tmapc",
+      "originalText": "TreeMap",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "am1",
+      "x": 640,
+      "y": 130,
+      "width": 30,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -30,
+          40
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "map",
+        "fixedPoint": [
+          0.3,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "hmap",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "am2",
+      "x": 740,
+      "y": 130,
+      "width": 30,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          40
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e5e5e5",
+      "startBinding": {
+        "elementId": "map",
+        "fixedPoint": [
+          0.7,
+          1
+        ]
+      },
+      "endBinding": {
+        "elementId": "tmapc",
+        "fixedPoint": [
+          0.5,
+          0
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "x": 500,
+      "y": 260,
+      "text": "Map views: keySet(), values(), entrySet()",
+      "fontSize": 14,
+      "fontFamily": 8,
+      "strokeColor": "#a0a0a0",
+      "originalText": "Map views: keySet(), values(), entrySet()",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "transparent"
+  }
+}

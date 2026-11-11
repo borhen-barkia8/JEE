@@ -1,0 +1,24 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    { "type": "text", "id": "title", "x": 260, "y": 20, "text": "Java Streams API: Pipeline Model", "fontSize": 20, "fontFamily": 8, "strokeColor": "#e5e5e5", "originalText": "Java Streams API: Pipeline Model", "autoResize": true },
+
+    { "type": "rectangle", "id": "src", "x": 40, "y": 90, "width": 180, "height": 80, "roundness": { "type": 3 }, "backgroundColor": "#1e3a5f", "fillStyle": "solid", "strokeColor": "#4a9eed", "boundElements": [{ "id": "tsrc", "type": "text" }] },
+    { "type": "text", "id": "tsrc", "x": 50, "y": 105, "width": 160, "height": 50, "text": "Source\nCollection / Array\nStream.of(...)", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "center", "verticalAlign": "middle", "containerId": "src", "originalText": "Source\nCollection / Array\nStream.of(...)", "autoResize": true },
+
+    { "type": "rectangle", "id": "inter", "x": 280, "y": 70, "width": 280, "height": 120, "roundness": { "type": 3 }, "backgroundColor": "#2d1b69", "fillStyle": "solid", "strokeColor": "#8b5cf6", "boundElements": [{ "id": "tinter", "type": "text" }] },
+    { "type": "text", "id": "tinter", "x": 290, "y": 85, "width": 260, "height": 90, "text": "Intermediate (lazy)\nfilter, map, flatMap\nsorted, distinct\nlimit, skip, peek", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "center", "verticalAlign": "middle", "containerId": "inter", "originalText": "Intermediate (lazy)\nfilter, map, flatMap\nsorted, distinct\nlimit, skip, peek", "autoResize": true },
+
+    { "type": "rectangle", "id": "term", "x": 620, "y": 70, "width": 250, "height": 120, "roundness": { "type": 3 }, "backgroundColor": "#1a4d2e", "fillStyle": "solid", "strokeColor": "#22c55e", "boundElements": [{ "id": "tterm", "type": "text" }] },
+    { "type": "text", "id": "tterm", "x": 630, "y": 85, "width": 230, "height": 90, "text": "Terminal (triggers run)\ncollect, forEach, reduce\ncount, min, max\nfindFirst, anyMatch", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "center", "verticalAlign": "middle", "containerId": "term", "originalText": "Terminal (triggers run)\ncollect, forEach, reduce\ncount, min, max\nfindFirst, anyMatch", "autoResize": true },
+
+    { "type": "arrow", "id": "a1", "x": 220, "y": 130, "width": 60, "height": 0, "points": [[0,0],[60,0]], "endArrowhead": "arrow", "strokeColor": "#e5e5e5", "startBinding": { "elementId": "src", "fixedPoint": [1, 0.5] }, "endBinding": { "elementId": "inter", "fixedPoint": [0, 0.5] } },
+    { "type": "arrow", "id": "a2", "x": 560, "y": 130, "width": 60, "height": 0, "points": [[0,0],[60,0]], "endArrowhead": "arrow", "strokeColor": "#e5e5e5", "startBinding": { "elementId": "inter", "fixedPoint": [1, 0.5] }, "endBinding": { "elementId": "term", "fixedPoint": [0, 0.5] } },
+
+    { "type": "rectangle", "id": "notes", "x": 120, "y": 230, "width": 660, "height": 110, "roundness": { "type": 3 }, "backgroundColor": "#5c3d1a", "fillStyle": "solid", "strokeColor": "#f59e0b", "boundElements": [{ "id": "tnotes", "type": "text" }] },
+    { "type": "text", "id": "tnotes", "x": 130, "y": 245, "width": 640, "height": 80, "text": "• Stream does not store data; it processes elements from a source\n• Intermediate ops are lazy (no work until terminal op)\n• A stream is single-use (cannot reuse after terminal op)\n• Collectors.toList(), toSet(), joining(), groupingBy() produce results", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "left", "verticalAlign": "middle", "containerId": "notes", "originalText": "• Stream does not store data; it processes elements from a source\n• Intermediate ops are lazy (no work until terminal op)\n• A stream is single-use (cannot reuse after terminal op)\n• Collectors.toList(), toSet(), joining(), groupingBy() produce results", "autoResize": true }
+  ],
+  "appState": { "viewBackgroundColor": "transparent" }
+}

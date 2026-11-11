@@ -1,0 +1,24 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    { "type": "text", "id": "title", "x": 300, "y": 20, "text": "Optional<T>: Handling Absent Values", "fontSize": 20, "fontFamily": 8, "strokeColor": "#e5e5e5", "originalText": "Optional<T>: Handling Absent Values", "autoResize": true },
+
+    { "type": "rectangle", "id": "create", "x": 40, "y": 80, "width": 260, "height": 120, "roundness": { "type": 3 }, "backgroundColor": "#1e3a5f", "fillStyle": "solid", "strokeColor": "#4a9eed", "boundElements": [{ "id": "tcreate", "type": "text" }] },
+    { "type": "text", "id": "tcreate", "x": 50, "y": 95, "width": 240, "height": 90, "text": "Creation\nOptional.of(value)\n  (non-null, else NPE)\nOptional.ofNullable(v)\nOptional.empty()", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "left", "verticalAlign": "middle", "containerId": "create", "originalText": "Creation\nOptional.of(value)\n  (non-null, else NPE)\nOptional.ofNullable(v)\nOptional.empty()", "autoResize": true },
+
+    { "type": "rectangle", "id": "use", "x": 330, "y": 80, "width": 260, "height": 120, "roundness": { "type": 3 }, "backgroundColor": "#1a4d2e", "fillStyle": "solid", "strokeColor": "#22c55e", "boundElements": [{ "id": "tuse", "type": "text" }] },
+    { "type": "text", "id": "tuse", "x": 340, "y": 95, "width": 240, "height": 90, "text": "Read / Fallback\nisPresent(), isEmpty()\nifPresent(consumer)\norElse(default)\norElseGet(supplier)", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "left", "verticalAlign": "middle", "containerId": "use", "originalText": "Read / Fallback\nisPresent(), isEmpty()\nifPresent(consumer)\norElse(default)\norElseGet(supplier)", "autoResize": true },
+
+    { "type": "rectangle", "id": "trans", "x": 620, "y": 80, "width": 260, "height": 120, "roundness": { "type": 3 }, "backgroundColor": "#2d1b69", "fillStyle": "solid", "strokeColor": "#8b5cf6", "boundElements": [{ "id": "ttrans", "type": "text" }] },
+    { "type": "text", "id": "ttrans", "x": 630, "y": 95, "width": 240, "height": 90, "text": "Transform / Filter\nmap(fn) -> Optional<U>\nflatMap(fn -> Optional<U>)\nfilter(predicate)\norElseThrow()", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "left", "verticalAlign": "middle", "containerId": "trans", "originalText": "Transform / Filter\nmap(fn) -> Optional<U>\nflatMap(fn -> Optional<U>)\nfilter(predicate)\norElseThrow()", "autoResize": true },
+
+    { "type": "arrow", "id": "a1", "x": 300, "y": 140, "width": 30, "height": 0, "points": [[0,0],[30,0]], "endArrowhead": "arrow", "strokeColor": "#e5e5e5", "startBinding": { "elementId": "create", "fixedPoint": [1, 0.5] }, "endBinding": { "elementId": "use", "fixedPoint": [0, 0.5] } },
+    { "type": "arrow", "id": "a2", "x": 590, "y": 140, "width": 30, "height": 0, "points": [[0,0],[30,0]], "endArrowhead": "arrow", "strokeColor": "#e5e5e5", "startBinding": { "elementId": "use", "fixedPoint": [1, 0.5] }, "endBinding": { "elementId": "trans", "fixedPoint": [0, 0.5] } },
+
+    { "type": "rectangle", "id": "warn", "x": 140, "y": 240, "width": 640, "height": 90, "roundness": { "type": 3 }, "backgroundColor": "#5c1a1a", "fillStyle": "solid", "strokeColor": "#ef4444", "boundElements": [{ "id": "twarn", "type": "text" }] },
+    { "type": "text", "id": "twarn", "x": 150, "y": 255, "width": 620, "height": 60, "text": "Avoid get() without check (NoSuchElementException if empty).\nPrefer orElse/orElseGet/orElseThrow/ifPresent.\nUse Optional mainly as return type to express possible absence.", "fontSize": 14, "fontFamily": 8, "strokeColor": "#e5e5e5", "textAlign": "left", "verticalAlign": "middle", "containerId": "warn", "originalText": "Avoid get() without check (NoSuchElementException if empty).\nPrefer orElse/orElseGet/orElseThrow/ifPresent.\nUse Optional mainly as return type to express possible absence.", "autoResize": true }
+  ],
+  "appState": { "viewBackgroundColor": "transparent" }
+}
